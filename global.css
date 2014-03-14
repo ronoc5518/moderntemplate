@@ -74,7 +74,7 @@
 				font-size: 2em;
 			}
 
-			.desc {
+			.description, .desc {
 				opacity: .8;
 				font-size: .5em;
 				line-height: 2em;
@@ -110,15 +110,6 @@
 			a {
 				text-decoration: none;
 				color: inherit;
-			}
-
-			section {
-				line-height: 1.5em;
-				font-size: 0.9em;
-				padding: 40px;
-				width: 85%;
-				text-align: center;
-				margin: 0px auto;
 			}
 
 			.toggle {
@@ -160,3 +151,8 @@
 		}
 
 /*CUSTOMIZED STUFF*/
+
+button { 
+    outline: none;
+}
+
