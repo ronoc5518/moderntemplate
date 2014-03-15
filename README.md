@@ -8,6 +8,5 @@ Features will include:
 - Responsive navbar
 - Buttons
 - Page header
-- EasyTabs.js integrated
 - Footer
 - More to be added in future versions based off of suggestions
