@@ -10,3 +10,8 @@ Features will include:
 - Page header
 - Footer
 - More to be added in future versions based off of suggestions
+
+Planned features in the future
+- Content/image slider
+- Progress bars
+- Notifications
