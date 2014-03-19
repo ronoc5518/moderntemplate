@@ -1,14 +1,21 @@
+/* COPYRIGHT 2014 ronoc5518, licensed under Apache 2.0. Version 1.0 */
+
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body {
-	margin: 0px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
 	padding: 0px;
 	font-family: 'Ubuntu', sans-serif;
 	color: #8A8A8A;
-	background-image: url(body.png);
+	background-image: url(../images/body.png);
 }
 
-.fixed { position: fixed; }
+.fixed { 
+	position: fixed; 
+}
 
 hr { 
 	width: 90%; 
@@ -81,20 +88,22 @@ p {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
+	background: #05D1E8;
+	position: fixed;
+	height: 2px;
+	z-index: 9999999;
 }
 
 
 header {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px;
 	color: white;
-	margin: 0px;
+	padding-top: 1.5em;
 	font-size: 2em;
 	overflow: hidden;
-	background-image: url(brickwall.png);
+	background-image: url(../images/city.jpg);
 	background-attachment: fixed;
-	border-top: 3px solid #14539C;
-	border-bottom: 3px solid #14539C;
+	background-position: center center;
 }
 
 .desc {
@@ -116,7 +125,10 @@ nav {
 	overflow: hidden;
 	margin: 0px;
 	background-color: black;
-	border-top: 2px solid #05D1E8;
+	box-shadow: 0 0 1em #000;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
 }
 
 nav li { 
@@ -179,7 +191,7 @@ a {
 }
 
 .brand:hover { 
-	color: white;
+	color: #fff;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -193,16 +205,29 @@ a {
 	text-align: center;
 }
 
+.two-col {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 3%;
+	-ms-column-count: 2;
+	-ms-column-gap: 3%;
+	-moz-column-count: 2;
+	-moz-column-gap: 3%;
+	-o-column-count: 2;
+	-o-column-gap: 3%;
+	column-count: 2;
+	column-gap: 3%;
+}
+
 footer {
 	padding: 40px 0px;
 	color: white;
 	margin: 0px;
 	font-size: 1em;
 	overflow: hidden;
-	background-image: url(footer.png);
+	background-image: url(../images/footer.png);
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 680px){
 
 nav li { 
 	list-style: none;
@@ -223,10 +248,18 @@ nav ul {
 }
 
 nav ul li {
-	display: inline;
-	text-align: center;
+	box-sizing: border-box;
+	width: 100%;
 	padding: 10px;
 }
 
 .left-col, .right-col { width: 100%; }
 }
+
+/* .two-col {
+	-webkit-column-count: 1;
+	-ms-column-count: 1;
+	-moz-column-count: 1;
+	-o-column-count: 1;
+	column-count: 1;
+}*/
