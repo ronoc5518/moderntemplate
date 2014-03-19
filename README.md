@@ -15,3 +15,4 @@ Planned features in the future
 - Content/image slider
 - Progress bars
 - Notifications
+- Long, long term: turn it into a web framework
