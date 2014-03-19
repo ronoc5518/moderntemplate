@@ -2,6 +2,9 @@
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
+::selection { background-color: #05D1E8; color: #fff; }
+::-moz-selection { background-color: #05D1E8; color: #fff; }
+
 body {
 	margin-top: 0;
 	margin-left: 0;
@@ -104,6 +107,7 @@ header {
 	background-image: url(../images/city.jpg);
 	background-attachment: fixed;
 	background-position: center center;
+	text-shadow: 0 0 8px #000;
 }
 
 .desc {
