@@ -2,6 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
+
 ::selection { background-color: #05D1E8; color: #fff; }
 ::-moz-selection { background-color: #05D1E8; color: #fff; }
 
@@ -18,6 +19,14 @@ body {
 
 .fixed { 
 	position: fixed; 
+}
+
+.absolute {
+	position: absolute;
+}
+
+.static {
+	position: static;
 }
 
 hr { 
