@@ -194,6 +194,7 @@ a {
 }
 
 .brand {
+	padding-top: 13.5px;
 	font-size: 1.5em;
 	color: inherit;
 	-webkit-transition: all 0.5s;
@@ -218,17 +219,38 @@ a {
 	text-align: center;
 }
 
+.active {
+	width: 0px;
+	height: 0px;
+	border-top-style: solid;
+	border-top-width: 0 10px 10px 10px;
+	border-top-color: transparent transparent #007bff transparent;
+}
+
+/* COLUMNS/GRID */
+.group {
+	display: table;
+}
+
+.one-col {
+	width: 95%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	display: table-cell;
+}
+
 .two-col {
-	-webkit-column-count: 2;
-	-webkit-column-gap: 3%;
-	-ms-column-count: 2;
-	-ms-column-gap: 3%;
-	-moz-column-count: 2;
-	-moz-column-gap: 3%;
-	-o-column-count: 2;
-	-o-column-gap: 3%;
-	column-count: 2;
-	column-gap: 3%;
+	width: 45%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	display: table-cell;
+}
+
+.three-col {
+	width: 35%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	display: table-cell;
 }
 
 footer {
@@ -240,39 +262,47 @@ footer {
 	background-image: url(../images/footer.png);
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 680px) {
 
-nav li { 
-	list-style: none;
-	display: block;
-	overflow: hidden;
+	nav li { 
+		list-style: none;
+		display: block;
+		overflow: hidden;
+	}
+
+	nav ul {
+		overflow: hidden;
+		display: block;
+		padding: 0px;
+		margin: 0px;
+		-webkit-transition: max-height 0.5s;
+		-ms-transition: max-height 0.5s;
+		-moz-transition: max-height 0.5s;
+		-o-transition: max-height 0.5s;
+		transition: max-height 0.5s;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.two-col {
+		width: 95%;
+		display: table;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+
+	.three-col {
+		width: 95%;
+		display: table;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
 }
-
-nav ul {
-	overflow: hidden;
-	display: block;
-	padding: 0px;
-	margin: 0px;
-	-webkit-transition: max-height 0.5s;
-	-ms-transition: max-height 0.5s;
-	-moz-transition: max-height 0.5s;
-	-o-transition: max-height 0.5s;
-	transition: max-height 0.5s;
-}
-
-nav ul li {
-	box-sizing: border-box;
-	width: 100%;
-	padding: 10px;
-}
-
-.left-col, .right-col { width: 100%; }
-}
-
-/* .two-col {
-	-webkit-column-count: 1;
-	-ms-column-count: 1;
-	-moz-column-count: 1;
-	-o-column-count: 1;
-	column-count: 1;
-}*/
