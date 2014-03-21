@@ -9,6 +9,7 @@ Features will include:
 - Buttons
 - Page header
 - Footer
+- Multiple themes (gradient, flat, flat hybrid is current)
 - More to be added in future versions based off of suggestions
 
 Planned features in the future
