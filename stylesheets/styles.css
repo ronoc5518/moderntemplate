@@ -229,6 +229,17 @@ a {
 	border-top-color: transparent transparent #007bff transparent;
 }
 
+.featured-content {
+	padding: 45px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin: none;
+	left: 0 auto;
+	right: 0 auto;
+	display: table;
+}
+
 /* COLUMNS/GRID */
 .group {
 	display: table;
@@ -255,6 +266,13 @@ a {
 	display: table-cell;
 }
 
+.four-col {
+	width: 23%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	display: table-cell; 
+}
+
 footer {
 	padding: 40px 0px;
 	color: white;
@@ -263,6 +281,17 @@ footer {
 	overflow: hidden;
 	background-image: url(../images/footer.png);
 	box-shadow: 0 0 5px #000;
+}
+
+@media screen and (max-width: 800px) {
+	.four-col {
+		width: 95%;
+		display: table;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -289,6 +318,7 @@ footer {
 		box-sizing: border-box;
 		width: 100%;
 		padding: 10px;
+		line-height: 25px;
 	}
 
 	header {
