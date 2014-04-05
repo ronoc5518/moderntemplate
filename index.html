@@ -1,10 +1,47 @@
-<!--DOCTYPE html-->
 <html>
-    <head>
-    <title>Modern Bootstrap Template</title>
-    <!-- link CSS styles here -->
-    </head>
-    <body>
-    <!-- link JS here -->
-    </body>
+<head>
+	<title>Bootstrap Template</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Your site description here">
+	<meta name="keywords" content="Your keywords here">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+	<!-- Remove the stylesheet if you want to disable gradient style --> <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<style type="text/css">
+		.navbar-brand { border-right: thin solid #F2F2F2; }
+		@media (max-width: 600px) {
+		  .navbar-brand {
+		    border: none;
+		  }
+		} 
+        .white{background-color:#fff}.white-text{color:#fff}.black{background-color:#000}.black-text{color:#000}.red{background-color:#E33030}.red-text{color:#E33030}.yellow{background-color:#F0DC00}.yellow-text{color:#F0DC00}.green{background-color:#19C213}.green-text{color:#19C213}.lgreen{background-color:#10E63B}.lgreen-text{color:#10E63B}.dgreen{background-color:#29963F}.dgreen-text{color:#29963F}.cyan{background-color:#05D1E8}.cyan-text{color:#05D1E8}.blue{background-color:#07F}.blue-text{color:#07F}.navy{background-color:#14539C}.navy-text{color:#14539C}.orange{background-color:#E89700}.orange-text{color:#E89700}.gray{background-color:#B3B3B3}.gray-text{color:#B3B3B3}.lgray{background-color:#CFCFCF}.lgray-text{color:#CFCFCF}.dgray{background-color:#7A7A7A}.dgray-text{color:#7A7A7A}.pink{background-color:#E01B9B}.pink-text{color:#E01B9B}.clear,.transparent{opacity:0}
+
+	</style>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav style="font-size: 12px;">
+			<li class="brand pull-left">ronoc5518</li>
+			<div class="toggle pull-right"><i class="glyphicon glyphicon-align-justify"></i></div>
+				<ul class="hide text-left">
+					<a href="http://hurricanehosting.net"><li class="lined">Home</li></a>
+					<a href="http://hurricanehosting.net/services"><li class="lined">Services</li></a>
+					<a href="http://hurricanehosting.net/maintenance.html"><li class="lined">Reviews</li></a>
+					<a href="http://hurricanehosting.net/billing/serverstatus.php"><li class="lined">Status</li></a>
+					<a href="http://hurricanehosting.net/billing"><li class="lined">Billing Area</li></a>
+					<a href="#" data-dropdown="#login"><li class="lined">Login</li></a>
+
+				</ul>
+		</nav>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+			$('.toggle').on('click', function(){
+				$('nav ul').toggleClass('hide');
+			});
+		</script>
+</body>
 </html>
