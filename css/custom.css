@@ -1,0 +1,262 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+::selection { background-color: #00B3CF; color: #fff; }
+::-moz-selection { background-color: #00B3CF; color: #fff; }
+
+body {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #8A8A8A;
+	background-image: url(../images/brickwall.png);
+	background-attachment: fixed;
+}
+
+img { 
+	pointer-events: none; 
+}
+
+p { 
+	padding-right: 3em; 
+	padding-left: 3em; 
+}
+
+.text-left { 
+	text-align: left; 
+}
+
+.text-center { 
+	text-align: center; 
+}
+.center { 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.text-right { 
+	text-align: right; 
+}
+
+.pull-left { 
+	float: left; 
+	padding: 10px; 
+}
+
+.pull-right { 
+	float: right; 
+	padding: 10px; 
+}
+
+
+header {
+	padding: 20px;
+	color: white;
+	padding-top: 1.5em;
+	font-size: 2em;
+	overflow: hidden;
+	background-image: url(../images/servers.jpg);
+	background-attachment: fixed;
+	background-position: center 900px;
+	text-shadow: 0 0 8px #000;
+	box-shadow: 0 0 5px #000;
+}
+
+.desc {
+	opacity: .8;
+	font-size: .5em;
+	line-height: 2em;
+	font-size: 16px;
+}
+
+.divider-left {
+	border-left: thin solid #303030;
+}
+
+.divider-right {
+	border-right: thin solid #303030;
+}
+
+nav {
+	overflow: hidden;
+	margin: 0px;
+	background-color: black;
+	box-shadow: 0 0 2px #000;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+}
+
+nav li { 
+	list-style: none;
+	display: inline;
+	overflow: hidden;
+	height: auto;
+}
+
+nav ul {
+	overflow: hidden;
+	display: inline;
+	color: white;
+	margin-right: 5px;
+	margin-left: -32px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: center;
+	-webkit-transition: max-height 0.5s;
+	-ms-transition: max-height 0.5s;
+	-moz-transition: max-height 0.5s;
+	-o-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+
+}
+
+nav ul li {
+	display: inline;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 50px;
+	color: #00B3CF;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+nav ul li:hover {
+	color: #0B7D8A; 
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+nav ul li:hover:after {
+	content: "";
+}
+
+.toggle {
+	width: 15%;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: white;
+	display: block;
+	visibility: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #00B3CF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00A1BA;
+}
+
+.brand {
+	padding-top: 13.5px;
+	font-size: 1.5em;
+	color: inherit;
+	border-right: thin solid #303030;
+	height: 100%;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.brand:hover { 
+	color: #fff;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+footer {
+	padding: 40px 0px;
+	color: #fff;
+	font-size: 1em;
+	overflow: hidden;
+	box-shadow: 0 0 2px #000;
+	background: #000;
+	margin-top: 15px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+@media screen and (max-width: 700px) {
+
+	.brand {
+		text-align: center;
+		display: block;
+		border: none;
+	}
+
+	nav li { 
+		list-style: none;
+		display: block;
+		overflow: hidden;
+	}
+
+	nav ul {
+		overflow: hidden;
+		display: block;
+		padding: 0;
+		margin: 0;
+		border-left: thin solid #303030;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		line-height: 25px;
+		display: block;
+		-webkit-transition: height 1s;
+		-ms-transition: height 1s;
+		-moz-transition: height 1s;
+		-o-transition: height 1s;
+		transition: height 1s;
+	}
+
+	.divider-right {
+		border: none;
+	}
+
+	.toggle {
+		display: block;
+		visibility: visible;
+	}
+
+	.toggle:hover {
+		color: #00B3CF;
+	}
+
+	.show {
+		max-height: 21em;
+	}
+
+	.hide {
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+	}
+
+	header {
+		font-size: 1.3em;
+		padding-top: 60px;
+	}
+}
