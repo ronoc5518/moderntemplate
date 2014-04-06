@@ -9,3 +9,7 @@ What I used to make this
 Images
 ------
 Header background - http://designleaks.net/2014/02/12/seamless-polygon-backgrounds/
+
+JS
+--
+Image captions - http://www.wbotelhos.com/capty/
