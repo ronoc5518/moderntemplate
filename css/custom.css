@@ -1,8 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
-::selection { background-color: #00B3CF; color: #fff; }
-::-moz-selection { background-color: #00B3CF; color: #fff; }
-
 body {
 	margin-top: 0;
 	margin-left: 0;
@@ -11,8 +8,6 @@ body {
 	padding: 0px;
 	font-family: 'Ubuntu', sans-serif;
 	color: #8A8A8A;
-	background-image: url(../images/brickwall.png);
-	background-attachment: fixed;
 }
 
 img { 
@@ -57,7 +52,6 @@ header {
 	padding-top: 1.5em;
 	font-size: 2em;
 	overflow: hidden;
-	background-image: url(../images/servers.jpg);
 	background-attachment: fixed;
 	background-position: center 900px;
 	text-shadow: 0 0 8px #000;
@@ -81,6 +75,7 @@ header {
 
 nav {
 	overflow: hidden;
+    display: inline-table;
 	margin: 0px;
 	background-color: black;
 	box-shadow: 0 0 2px #000;
@@ -105,16 +100,10 @@ nav ul {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	vertical-align: center;
-	-webkit-transition: max-height 0.5s;
-	-ms-transition: max-height 0.5s;
-	-moz-transition: max-height 0.5s;
-	-o-transition: max-height 0.5s;
-	transition: max-height 0.5s;
-
 }
 
 nav ul li {
-	display: inline;
+	display: inline-table;
 	margin: 0;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -165,6 +154,7 @@ a:hover {
 .brand {
 	padding-top: 13.5px;
 	font-size: 1.5em;
+    display: inline;
 	color: inherit;
 	border-right: thin solid #303030;
 	height: 100%;
@@ -246,7 +236,7 @@ footer {
 	}
 
 	.show {
-		max-height: 21em;
+        visibility: visible;
 	}
 
 	.hide {
