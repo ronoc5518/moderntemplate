@@ -188,10 +188,14 @@ a:hover {
 }
 
 .content {
+<<<<<<< HEAD
     padding-top: 10px;
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
+=======
+    padding: 30px;
+>>>>>>> FETCH_HEAD
     margin: 0;
 }
 

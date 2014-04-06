@@ -3955,6 +3955,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
+<<<<<<< HEAD
   color: #fff;
   margin-top: 2px;
   visibility: visible;
@@ -3963,6 +3964,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -moz-transition: text-shadow 0.5s;
   -o-transition: text-shadow 0.5s;
   transition: text-shadow 0.5s;
+=======
+  color: #777;
+  visibility: visible;
+>>>>>>> FETCH_HEAD
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -3978,9 +3983,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
+<<<<<<< HEAD
   color: #fff; 
   margin: 0;
   text-shadow: none;
+=======
+  color: #fff;
+>>>>>>> FETCH_HEAD
   background-color: transparent;
   border-top: 2px solid #fff;
 }
