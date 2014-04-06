@@ -3800,6 +3800,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
+    
+  .navbar > ul > li > a,
+  nav {
+    color: white;
+  }
+    
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
@@ -3955,7 +3961,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #fff !important;
   margin-top: 2px;
   visibility: visible;
   -webkit-transition: text-shadow 0.5s;
@@ -3968,7 +3974,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #fff !important;
   text-shadow: 0 0 4px #fff;
   background-color: transparent;
   -webkit-transition: text-shadow 0.5s;
